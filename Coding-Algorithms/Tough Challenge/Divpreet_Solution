@@ -1,0 +1,27 @@
+#include <iostream>
+#include<math.h>
+using namespace std; 
+  
+// Function to calculate distance 
+float distance(int x1, int y1, int x2, int y2) 
+{ 
+    // Calculating distance 
+    return sqrt(pow(x2 - x1, 2) +  
+                pow(y2 - y1, 2) * 1.0); 
+} 
+  
+// Drivers Code 
+int main() 
+{ 
+    int x1;
+    int x2;
+    int y1;
+    int y2;
+    cin>>x1;
+    cin>>x2;
+    cin>>y1;
+    cin>>y2;
+
+    cout << distance(x1, x2, y1, y2); 
+    return 0; 
+}
